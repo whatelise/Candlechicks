@@ -263,7 +263,7 @@ h2 {
   font-weight: 300;
   font-size: 1.6em;
   line-height: 1.6em;
-  text-align: center;
+  text-align:;
 }
 
 h3 {
@@ -280,14 +280,16 @@ h4 {
   line-height: 2.4em;
 }
 
+h5{
+  font-size: .8em;
+  padding-left: .8em;
+  line-height: 1.5em;
+}
+c
+
 p {
   font-family: var(--primary-font);
   font-size: 1em;
   font-weight: 200;
 }
 
-h5{
-  font-size: .8em;
-  padding-left: .8em;
-  line-height: 1.5em;
-}

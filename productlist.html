@@ -4,11 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product List</title>
+    <link rel="stylesheet" href="productlist.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="workshop.html">WORKSHOP</a></li>
+          <li><a href="productlist.html">SHOP</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <header></header>
-      <body></body>
+      <div id="wrapper">
+        <p>
+          Learn how to create your own candles at one of Candlechick's many
+          pottery classes held at our cozy studio in the heart of Copenhagen.
+        </p>
+        <p>some other info about classes</p>
+      </div>
+      <div id="filtersandproductlist">
+        <aside id="filters">
+          <ul>
+            <li>SHOP ALL</li>
+            <li>Collections</li>
+            <ul>
+              <li>Pillars</li>
+              <li>Whack</li>
+              <li>Greek</li>
+            </ul>
+          </ul>
+        </aside>
+        <div id="productlist">
+          <template id="producttemplate"
+            ><article class="product">
+              <a href="productview.html"
+                ><div class="container">
+                  <img
+                    src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp"
+                    alt="women sweat proof t-shirt"
+                  />
+                </div>
+                <div class="info">
+                  <h2>Delhi</h2>
+                  <p class="price">150KR</p>
+                  <p class="collection">Pillar Collection</p>
+
+                  <!-- <div class="discounted">
+                  <span class="newprice">150 KR</span>
+                  <p class="price">100 KR</p>
+                </div> -->
+                </div>
+              </a>
+            </article></template
+          >
+          <!-- <article class="product">
+            <a href="productview.html"
+              ><div class="container">
+                <img
+                  src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp"
+                  alt="women sweat proof t-shirt"
+                />
+              </div>
+              <h2>Delhi</h2>
+              <p class="collection">Pillars</p>
+              <p class="price"></p>
+              <div class="discounted">
+                <span class="newprice">150 KR</span>
+                <p class="price">100 KR</p>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="productview.html"
+              ><div class="container">
+                <img
+                  src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp"
+                  alt="women sweat proof t-shirt"
+                />
+              </div>
+              <h2>Delhi</h2>
+              <p class="collection">Pillar Collection</p>
+              <p class="price"></p>
+              <div class="discounted">
+                <span class="newprice">150 KR</span>
+                <p class="price">100 KR</p>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="productview.html"
+              ><div class="container">
+                <img
+                  src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp"
+                  alt="women sweat proof t-shirt"
+                />
+              </div>
+              <h2>Delhi</h2>
+              <p class="collection">Pillars</p>
+              <p class="price"></p>
+              <div class="discounted">
+                <span class="newprice">150 KR</span>
+                <p class="price">100 KR</p>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="productview.html"
+              ><div class="container">
+                <img
+                  src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp"
+                  alt="women sweat proof t-shirt"
+                />
+              </div>
+              <h2>Delhi</h2>
+              <p class="collection">Pillars</p>
+              <p class="price"></p>
+              <div class="discounted">
+                <span class="newprice">150 KR</span>
+                <p class="price">100 KR</p>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="productview.html"
+              ><div class="container">
+                <img
+                  src="https://kea-alt-del.dk/t7/images/webp/640/1561.webp"
+                  alt="women sweat proof t-shirt"
+                />
+              </div>
+              <h2>Delhi</h2>
+              <p class="collection">Pillars</p>
+              <p class="price"></p>
+              <div class="discounted">
+                <span class="newprice">150 KR</span>
+                <p class="price">100 KR</p>
+              </div>
+            </a>
+          </article>-->
+        </div>
+      </div>
     </main>
+    <script src="productlist.js"></script>
   </body>
 </html>

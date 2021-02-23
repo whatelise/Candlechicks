@@ -1,35 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Karla:wght@300;700&display=swap");
-/*
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Karla', sans-serif;
-*/
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-}
-:root {
-  --bg-color: White;
-  --link-color: rgb(36, 36, 36);
-  --link-hover-color: black;
-  --color-1: black;
-  --color-2: #FFD3D3;
-  --color-3: #1D8447;
-  --color-4: black;
-  --color-5: white;
-  --color-6: #EBEAE5;
-  --primary-font: "Karla", sans-serif;
-  --secondary-font: "Cormorant Garamond", serif;
-  --font-style: normal;
-  --text-transform: lowercase;
-  --main-text-color: #dar;
-  --white-space: 1rem;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -39,21 +7,30 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-.bannerImg {background-color:var(--color-6);height: 100vh;
-    overflow:hidden;}
+.bannerImg {
+  background-color: var(--color-6);
+  height: 100vh;
+  overflow: hidden;
+}
 
-.bannerImg img {margin-top: -11em;}
+.bannerImg img {
+  margin-top: -11em;
+}
 .greenBox {
   background-color: var(--color-3);
   height: 100vh;
 }
 
-.moodBanner1 { display: grid;
-    grid-template-columns: 1fr 1fr;}
+.moodBanner1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-.beigeBox {background-color: var(--color-6);}   
+.beigeBox {
+  background-color: var(--color-6);
+}
 
-a {display:block;
+/* a {display:block;
     text-align:center; font-family: var(--primary-font);
   color: var(--color-1);
   text-decoration: underline;
@@ -126,10 +103,10 @@ ul  {line-height: 0.5em;
   text-align: center;
   justify-content:center;
   align-items:center;
-}
+} */
 
 /* burger menu animation */
-#menuToggle {
+/* #menuToggle {
   position: absolute;
   z-index: 1;
   -webkit-user-select: none;
@@ -214,9 +191,9 @@ ul  {line-height: 0.5em;
   padding: 10px 0;
   font-size: 1em;
   display: inline;
-}
+} */
 /*Buttons animation*/
-button {
+/* button {
   transition: all 3s;
 }
 
@@ -233,8 +210,8 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-}
-html {
+} */
+/* html {
   font-size: 100%;
   font-family: var(--primary-font);
 }
@@ -250,9 +227,9 @@ footer {
 ul {
   display: flex;
   /*  justify-content: space-between; */
-}
+/* } */
 
-a .link {
+/* a .link {
   text-align: center;
 }
 
@@ -274,9 +251,9 @@ ul li:last-child {
 
 .color-swatch-4 {
   background-color: var(--color-4);
-}
+} */
 
-.images ul {
+/* .images ul {
   flex-direction: column;
   text-align: center;
 }
@@ -284,12 +261,13 @@ ul li:last-child {
 .images li {
   display: block;
   /*margin-right: 5vw;*/
-  margin-bottom: 1rem;
-}
+/* margin-bottom: 1rem;
+} */
+*/
 
 /*button styling*/
 
-button {
+/* button {
   border: 2px solid var(--color-1);
   padding: 1em 1.2em;
   border-radius: 1.5em;
@@ -308,13 +286,13 @@ button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-}
+} */
 
 .typography-main {
   color: var(--main-text-color);
 }
 
-h1 {
+/* h1 {
   font-family: var(--primary-font);
   font-weight: bold;
   text-transform: uppercase;
@@ -322,19 +300,21 @@ h1 {
 }
 
 /*Intro text/quote*/
-h2 {
+/* h2 {
   padding: 4em 4em 2em 4em;
   font-family: var(--secondary-font);
   font-weight: 300;
   font-size: 1.6em;
   line-height: 1.6em;
   text-align: center;
+} */
+
+p {
+  margin: 10vw;
 }
 
-p {margin: 10vw;}
-
 /*Paragraph*/
-p {
+/* p {
   font-family: var(--primary-font);
   font-weight: 300;
   font-size: 1.2em;
@@ -353,4 +333,4 @@ em {
 .font-details-color {
   font-size: 0.6em;
   color: var(--bg-color);
-}
+} */

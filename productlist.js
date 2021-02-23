@@ -27,7 +27,7 @@ function handleData(product) {
     console.log(candle);
     const template = document.querySelector("#producttemplate").content;
     const copy = template.cloneNode(true);
-    copy.querySelector("h2").textContent = candle.Name;
+    copy.querySelector("h3").textContent = candle.Name;
     copy.querySelector(".collection").textContent = candle.Collection;
     copy.querySelector(".price").textContent = candle.Price;
     const imgurl = mediaurl + candle.Image[0];

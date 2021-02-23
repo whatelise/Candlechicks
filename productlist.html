@@ -4,34 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product List</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="productlist.css" />
+    
+    
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar" href="javascript:void(0)">
         <ul>
-          <li><a href="workshop.html">WORKSHOP</a></li>
-          <li><a href="productlist.html">SHOP</a></li>
+          <div class="navLeft"><li>
+          <a href="">Workshops </a>
+        </li>
+          <li>
+          <a class="navShop" href="">Shop
+          </a>
+        </li></div>
+          <li><div class="logo">
+          </a href=""><img src=img/logo.svg></div>
+        </li>
+          <div class="navRight"><li>
+          <a href=""><img class="search" src=img/search.svg>
+          </a>
+          <li>
+            <a href=""><img class="bag" src=img/shopping-bag.svg>
+            </a>
+        </li></div>
         </ul>
-      </nav>
-    </header>
+      </nav></header>
     <main>
       <div id="wrapper">
-        <p>
+        <h2>
           Learn how to create your own candles at one of Candlechick's many
           pottery classes held at our cozy studio in the heart of Copenhagen.
-        </p>
+        </h2>
         <p>some other info about classes</p>
       </div>
       <div id="filtersandproductlist">
         <aside id="filters">
           <ul>
-            <li>SHOP ALL</li>
-            <li>Collections</li>
+            <li><h4>SHOP ALL</h4></li>
+            <li><h4>Collections</h4></li>
             <ul>
-              <li>Pillars</li>
-              <li>Whack</li>
-              <li>Greek</li>
+              <li><h5>Pillars</h5></li>
+              <li><h5>Whack</h5></li>
+              <li><h5>Greek</h5></li>
             </ul>
           </ul>
         </aside>
@@ -46,7 +64,7 @@
                   />
                 </div>
                 <div class="info">
-                  <h2>Delhi</h2>
+                  <h3 class="h3style">Delhi</h3>
                   <p class="price">150KR</p>
                   <p class="collection">Pillar Collection</p>
 
@@ -56,8 +74,7 @@
                 </div> -->
                 </div>
               </a>
-            </article></template
-          >
+            </article></template>
           <!-- <article class="product">
             <a href="productview.html"
               ><div class="container">
@@ -146,6 +163,8 @@
         </div>
       </div>
     </main>
+    <script src="nav.js"></script>
     <script src="productlist.js"></script>
+    
   </body>
 </html>

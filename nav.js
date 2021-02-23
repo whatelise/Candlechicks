@@ -1,17 +1,7 @@
 
-var yourNavigation = $("#navbar");
-stickyDiv = "sticky";
-yourHeader = $('.banner').height();
 
-$(window).scroll(function() {
-if( $(this).scrollTop() > yourHeader ) {
-yourNavigation.addClass(stickyDiv);
-} else {
-yourNavigation.removeClass(stickyDiv);
-}
-});
 
-/* window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
 
 var navbar = document.getElementById("navbar");
@@ -26,4 +16,4 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-} */
+}

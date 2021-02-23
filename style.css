@@ -39,8 +39,6 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-
-
 .bannerImg {background-color:var(--color-6);height: 100vh;
     overflow:hidden;}
 

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --bg-color: White;
   --link-color: rgb(36, 36, 36);
@@ -119,16 +124,6 @@ nav ul {
 a .link {
   text-align: center;
 }
-
-/* nav ul {
-  line-height: 0.5em;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
- */
-
 
 /* burger menu below */
 #menuToggle {
@@ -263,7 +258,7 @@ h2 {
   font-weight: 300;
   font-size: 1.6em;
   line-height: 1.6em;
-  text-align:;
+  text-align:center;
 }
 
 h3 {
@@ -291,5 +286,7 @@ p {
   font-family: var(--primary-font);
   font-size: 1em;
   font-weight: 200;
+  line-height: 1.2em;
 }
+
 

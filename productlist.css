@@ -103,7 +103,9 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-
+a {text-decoration: none;
+ 
+  text-underline-position: none;}
 /* product */
 
 article img {

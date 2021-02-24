@@ -1,6 +1,7 @@
 const url = "https://funkel-7745.restdb.io/rest/data-sheet-candles";
 const mediaurl = "https://funkel-7745.restdb.io/media/";
 
+
 const options = {
   headers: {
     "x-apikey": "603400ae5ad3610fb5bb6520",
@@ -39,6 +40,17 @@ function handleData(product) {
   });
 }
 
+/* function topSellers() {
+  if (this.classList.contains("topSeller")) {
+      const urlPrarms = new URLSearchParams(window.location.search);
+      const query = urlPrarms.get("q");
+      const start = urlParams.get("start");
+
+  endpoint?max=4
+  endpoint?filter="topSeller"
+ */
+
+ 
 // function showProduct(product) {
 //   console.log(product);
 //   const template = document.querySelector("#smallProductTemplate").content;

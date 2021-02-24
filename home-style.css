@@ -14,8 +14,10 @@
 }
 
 .bannerImg img {
-  margin-top: calc(-20px - 10vw);
-  transform: scale(1.15);
+  padding-top: -1em;
+  margin-top: calc(0.5em - 9.5vw); 
+  max-height: 100%;
+  transform: scale(1.95);
   
 }
 .greenBox {padding: 0vw 1vw;
@@ -45,18 +47,23 @@ margin: 0em 2em;}
 
 
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     .banner {
       display: flex;
       flex-wrap: wrap;
     }
+    .bannerImg img {
+      max-width: 100%;
+      padding-top: -4em;
+      margin-top: calc(4em - 6vw); ; 
+      transform: scale(1);}
     
-    .greenBox {height: 40vw;
-      padding: 0vw 2vw;
-  /*   .bannerImg img {width: fit-content;
-      margin-top: 0; */
+  
+    .greenBox {height: 20vw;
+      padding: 0vw 30vw;
+      
     }
-    .greenBox img 
+
     h1 {
       font-family: var(--primary-font);
       font-weight: bold;
@@ -72,6 +79,8 @@ margin: 0em 2em;}
     h2, h3, h4, h5, p{
       font-size: 1em;
     }
+  
+    li {font-size: 0.8em;}
   }
      
   }

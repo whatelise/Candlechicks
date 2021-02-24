@@ -2,6 +2,9 @@
   max-width: 100%;
   height: auto;
 } */
+
+main {overflow-x: hidden;}
+
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,6 +110,18 @@ article .collection {
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 0.5em ;}
+
+  footer {text-decoration: none;
+    margin: 1vw 6vw;
+    text-align: right;
+    padding: 1em;
+    font-family: var(--secondary-font);
+    Font-size: 1em;
+    border-radius: 0.5em;
+    color: darkgray;
+    bottom: 0;
+
+}
 
 .introText {text-align: center;line-height: 1.5;}
 

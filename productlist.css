@@ -103,9 +103,11 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-a {text-decoration: none;
- 
-  text-underline-position: none;}
+a {
+  text-decoration: none;
+
+  text-underline-position: none;
+}
 /* product */
 
 article img {
@@ -117,7 +119,8 @@ article img {
 }
 .info {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
+  text-align: left;
 }
 /* article h2 {
   font-size: 1.2rem;

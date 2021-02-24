@@ -1,0 +1,74 @@
+body {
+  margin: 6vw 20vw 6vw 7vw;
+}
+.productview {
+  display: flex;
+  grid-template-columns: 40% 60%;
+  grid-gap: 5em;
+}
+.container {
+  max-width: 30em;
+}
+.productimage {
+  grid-area: img;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.productinfo {
+  grid-area: sec;
+}
+.container1 {
+  margin-bottom: 5em;
+}
+button {
+  background-color: #ed8012;
+  border: none;
+}
+
+.collection {
+  text-transform: uppercase;
+  margin-bottom: 1.8em;
+}
+
+section h4 {
+  margin-bottom: 1em;
+}
+
+.details {
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.scent {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.measurement {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.burntime {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+span {
+  font-weight: 200;
+}
+
+.borderbox1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1em;
+  max-width: 26em;
+}
+.borderbox {
+  border-bottom: 1px solid black;
+  padding: 1em;
+  max-width: 26em;
+}
+
+.plus {
+  float: right;
+}

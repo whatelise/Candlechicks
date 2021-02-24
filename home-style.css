@@ -106,9 +106,8 @@ article .collection {
 #topSeller {display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 0.5em ;
+  grid-column-gap: 0.5em ;}
 
-  a {text-decoration: under;}
 .introText {text-align: center;line-height: 1.5;}
 
   @media only screen and (max-width: 800px) {
@@ -147,4 +146,4 @@ article .collection {
     li {font-size: 0.8em;}
   }
      
-  }
+  

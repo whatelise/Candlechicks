@@ -1,6 +1,19 @@
-const url = "https://funkel-7745.restdb.io/rest/data-sheet-candles";
-const mediaurl = "https://funkel-7745.restdb.io/media/";
+const urlParams = new URLSearchParams(window.location.search);
+const collectionFromUrl = urlParams.get("collection");
 
+// const url =
+//   "https://funkel-7745.restdb.io/rest/data-sheet-candles?q=%7B%22Collection%22:%22Pillar%22%7D";
+
+let url = "https://funkel-7745.restdb.io/rest/data-sheet-candles";
+if (collectionFromUrl) {
+  url =
+    'https://funkel-7745.restdb.io/rest/data-sheet-candles?q={"Collection":"' +
+    collectionFromUrl +
+    '"}';
+  console.log(url);
+}
+
+const mediaurl = "https://funkel-7745.restdb.io/media/";
 
 const options = {
   headers: {
@@ -28,6 +41,8 @@ function handleData(product) {
     console.log(candle);
     const template = document.querySelector("#producttemplate").content;
     const copy = template.cloneNode(true);
+    const aEl = copy.querySelector("a");
+    aEl.href = "productview.html?id=" + candle._id;
     copy.querySelector("h3").textContent = candle.Name;
     copy.querySelector(".collection").textContent = candle.Collection;
     copy.querySelector(".price").textContent = candle.Price;
@@ -50,7 +65,6 @@ function handleData(product) {
   endpoint?filter="topSeller"
  */
 
- 
 // function showProduct(product) {
 //   console.log(product);
 //   const template = document.querySelector("#smallProductTemplate").content;

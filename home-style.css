@@ -73,6 +73,8 @@ h4 {
 
 /*styling top sellers*/
 
+
+
 #wrapper {
   background-color: var(--color-4);
   padding-top: 20px;
@@ -107,7 +109,6 @@ article img {
 }
 .product a {
   text-decoration: none;
-
   text-underline-position: none;
 }
 .product {
@@ -178,6 +179,26 @@ footer {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+
+  footer {text-decoration: none;
+    margin: 1vw 6vw;
+    text-align: right;
+    padding: 1em;
+    font-family: var(--secondary-font);
+    Font-size: 1em;
+    border-radius: 0.5em;
+    color: darkgray;
+    bottom: 0;
+
+}
+.ul1  {
+  display:inline-flex;
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  background-color:#EBEAE5;
+  display: flex;}
+  .footerImg  {flex: 3;
   }
 
   .bannerImg {

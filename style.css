@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
 }
+html {
+  height: 100%;}
 
 img {
   max-width: 100%;
@@ -262,9 +264,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: var(--primary-font);
   font-weight: 300;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -290,4 +293,43 @@ p {
   line-height: 1.2em;
 }
 
+/*footer styling below*/
 
+footer {  display: block;
+}
+.wrapperFooter { display: block;
+ 
+}
+.ul1  {  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0.5em;
+}
+
+.ul1 li {
+    /* display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.5em; */
+  }
+
+}
+
+.ul2 {display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ul2 li {;
+}
+
+.ul3 {display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ul3 {}
+
+.ul3 img {max-height: 1.5em;}
+
+.signature {font-size:0.8em; text-align: center;text-transform: lowercase; background-color: var(--color-5);padding: 1em;}

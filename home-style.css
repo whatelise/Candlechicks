@@ -153,32 +153,6 @@ article .collection {
   grid-column-gap: 0.5em;
 }
 
-
-  footer {text-decoration: none;
-    margin: 1vw 6vw;
-    text-align: right;
-    padding: 1em;
-    font-family: var(--secondary-font);
-    Font-size: 1em;
-    border-radius: 0.5em;
-    color: darkgray;
-    bottom: 0;
-
-}
-.ul1  {
-  display:inline-flex;
-  list-style: none; 
-  margin: 0; 
-  padding: 0; 
-  background-color:#EBEAE5;
-  display: flex;}
-  .footerImg  {flex: 3;
-  }
-
-  .ul1 li {display: block;
-  }
-
-
   @media only screen and (max-width: 700px) {
     .banner {
       display: flex;

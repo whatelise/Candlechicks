@@ -1,8 +1,9 @@
-const url = "https://funkel-7745.restdb.io/rest/data-sheet-candles?q={%22topSeller%22:%22YES%22}&max=4";
+const url =
+  "https://funkel-7745.restdb.io/rest/data-sheet-candles?q={%22topSeller%22:%22YES%22}&max=4";
 /* const url = "https://funkel-7745.restdb.io/rest/data-sheet-candles?max=4"; */
 /* const url = "https://funkel-7745.restdb.io/rest/data-sheet-candles?q={topSeller:YES}&max=4"; */
 /* const url = "https://funkel-7745.restdb.io/rest/data-sheet-candles"+?q={"topSeller":"YES"}&max=4;*/
-const mediaurl = "https://funkel-7745.restdb.io/media/"; 
+const mediaurl = "https://funkel-7745.restdb.io/media/";
 /* &q={topSeller:"YES"} */
 
 const options = {

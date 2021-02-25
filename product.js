@@ -30,7 +30,7 @@ function showProduct(product) {
   document.querySelector(".productname").textContent = product.Name;
   document.querySelector(".price").textContent = product.Price;
   const imgurl = mediaurl + product.Image[0];
-  document.querySelector("img").src = imgurl;
+  document.querySelector(".productimage").src = imgurl;
   console.log(imgurl);
   document.querySelector("p.collection").textContent = product.Collection;
   document.querySelector(".details").innerHTML = product.Description;

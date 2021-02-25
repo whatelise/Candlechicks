@@ -112,11 +112,11 @@ nav ul {
   height: auto;
 }
 
-.bag {
-  width: 1em;
+.bag {max-width: 1.2em;
+  min-width: 1em;
 }
-.search {
-  width: 1em;
+.search {max-width: 1.2em;
+  min-width: 1em;
 }
 
 .logo {text-align: center;
@@ -291,8 +291,9 @@ h3 {
 h4 {
   font-family: var(--primary-font);
   text-transform: uppercase;
+  text-align: center;
   font-size: 1em;
-  line-height: 2.4em;
+  line-height: 1.5em;
   font-weight: bold;
 }
 
@@ -312,38 +313,62 @@ p {
 
 /*footer styling below*/
 
-/* footer {  display: block;
-} */
+.wrapEmailInput {display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas:
+  ". ym .";
+}
+
+.emailInput {grid-template-areas:ym;
+  border-bottom: 1px black solid; }
+
+.emailBanner {
+  background-color: var(--color-3);
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+margin-top:2em}
+
+.h1Email {text-align: center;
+  padding-top: 2em;
+  padding-bottom: 0.5em;}
+
+.h3Email {text-align: center;
+  text-transform: lowercase;padding-bottom: 3em;
+;}
+
 .wrapperFooter { display: grid;
   width: 100%;
   grid-template-columns: 4fr 2fr;
   padding: 2em;
- 
+  background-color: var(--color-5);
+  padding-top: 3em;
 }
+
+.wrapEmailInput {/* text-align: center; */
+   display: grid;
+  grid-template-columns: 1fr 70vw 1fr;
+  grid-template-areas:
+  ". ei .";
+}  
+
+.emailInput {grid-area:ei;
+  display: inline-flex;
+  flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 0.5em;}
 .ul1  {display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 0.5em;
-  padding: 1em;
-  
 }
 
 .ul1 li {
-  display: inline-flex;
-
+  display: inline-flex; padding-bottom: 2em;
   }
-}
-.
-.ul1Wrapper {display:block;}
 
 .ul2 {display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.ul2 li {/* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;} */
 }
 
 .ul3 {display: flex;
@@ -351,8 +376,11 @@ p {
   justify-content: space-around;
 }
 
-.ul3 {}
-
 .ul3 img {max-height: 1.5em;}
 
-.signature {font-size:0.8em; text-align: center;text-transform: lowercase; background-color: var(--color-5);padding: 1em;}
+.signature {font-size:0.8em; text-align: center;text-transform: lowercase;padding: 1em;background-color: var(--color-5)};
+
+@media only screen and (max-width: 700px) { 
+  h2, h3, h4, h5, p {
+  font-size: 1em;}
+}

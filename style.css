@@ -99,7 +99,6 @@ nav ul {
 .navLeft {
   display: inline-flex;
   align-items: center;
-  padding-left: 1em;
 }
 
 .navRight {
@@ -278,7 +277,7 @@ h1 {
 }
 
 h2 {
-  padding: 4em 4em 2em 4em;
+  /* padding: 4em 4em 2em 4em; */
   font-family: var(--secondary-font);
   font-weight: 300;
   font-size: 1.6em;
@@ -407,12 +406,29 @@ p {
   background-color: var(--color-5);
 }
 
-@media only screen and (max-width: 700px) {
-  h2,
-  h3,
-  h4,
-  h5,
-  p {
-    font-size: 1em;
+@media only screen and (max-width: 700px) { 
+ 
+/*Genneral Styling */
+
+  h1 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4em;
   }
+
+  h3, h4, h5, p {
+  font-size: 1em;
+line-height: 1em;}
+
+/*Nav bar mobile styling*/
+
+nav li {font-size: 0.8em;}
+
+nav a {
+  font-size:0.8em;
+  padding: 0em 0em;}
+
+.navLeft {padding: 1em;}
 }
+

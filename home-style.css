@@ -3,28 +3,29 @@
   height: auto;
 } */
 
-main {overflow-x: hidden;}
+main {
+  overflow-x: hidden;
+}
 
-
-.banner {display: grid;
+.banner {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   height: 100vh;
 }
-  
-  .bannerImg {
+
+.bannerImg {
   background-image: url(img/home-whack6.jpg);
-  background-attachment:scroll;
+  background-attachment: scroll;
   transform: scale(1.5);
-    background-position: center center;
-    z-index: 2;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    margin-top: -8em;
-    
-  }
+  background-position: center center;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: -8em;
+}
 
 .greenBox {
   top: 0;
@@ -32,15 +33,14 @@ main {overflow-x: hidden;}
   z-index: 4;
   height: 100%;
   width: 100%;
-   }
+}
 
-.greenBox img { position: absolute;
-height: 26.5vw;
-width: auto;
+.greenBox img {
+  position: absolute;
+  height: 26.5vw;
+  width: auto;
 
-
-
-/* 
+  /* 
 .bannerImg {
   background-color: var(--color-6);
   height: 100vh;
@@ -51,13 +51,12 @@ width: auto;
   /* margin-top: calc(0.9em - 11vw);  */
   /* max-height: 100%;
   transform: scale(2); */
-  
 }
-.greenBox {/* padding: 0vw 1vw; */
-  /* height: 100vh; */
-} */
-
-.moodBanner1 {
+/* .greenBox {
+  /* padding: 0vw 1vw; */
+/* height: 100vh; */
+/* } */
+*/ */ .moodBanner1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -144,90 +143,70 @@ article .collection {
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 0.5em ;}
-
-  footer {text-decoration: none;
-    margin: 1vw 6vw;
-    text-align: right;
-    padding: 1em;
-    font-family: var(--secondary-font);
-    Font-size: 1em;
-    border-radius: 0.5em;
-    color: darkgray;
-    bottom: 0;
-
+  grid-column-gap: 0.5em;
 }
-.ul1  {
-  display:inline-flex;
-  list-style: none; 
-  margin: 0; 
-  padding: 0; 
-  background-color:#EBEAE5;
-  display: flex;}
-  .footerImg  {flex: 3;
+
+footer {
+  text-decoration: none;
+  margin: 1vw 6vw;
+  text-align: right;
+  padding: 1em;
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  border-radius: 0.5em;
+  color: darkgray;
+  bottom: 0;
+}
+.ul1 {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ebeae5;
+  display: flex;
+}
+.footerImg {
+  flex: 3;
+}
+
+.ul1 li {
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
 
-  .ul1 li {display: block;
-  }
-
-
-  @media only screen and (max-width: 700px) {
-    .banner {
-      display: flex;
-      flex-wrap: wrap;
-      overflow: hidden;
-    }
-      
-      .bannerImg { transform: scale(1);
-      background-image: url(img/home-whack6.jpg);
-      background-attachment:scroll;
-        background-position: center center;
-        z-index: 2;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        margin-top: -10em;
-      }
-  
-    .greenBox {
-      top: 0;
-      background-color: var(--color-3);
-      z-index: 4;
-      height: 40%;
-      width: 100%;
-       }
-
-    .greenBox img { position:relative; display: inline-flex;
-      align-items: center;
+  .bannerImg {
+    transform: scale(1);
+    background-image: url(img/home-whack6.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
-  width: 100%;}
-  
-
-
-
-    h1 {
-      font-family: var(--primary-font);
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.4em;
-    }
-  
-    section {
-        display: flex;
-        flex-wrap: wrap;
-    }
-  
-    h2, h3, h4, h5, p{
-      font-size: 1em;
-    }
-  
-    li {font-size: 0.8em;}
+    width: 100%;
+    margin-top: -10em;
   }
 
   .greenBox {
-    height: 20vw;
-    padding: 0vw 30vw;
+    top: 0;
+    background-color: var(--color-3);
+    z-index: 4;
+    height: 40%;
+    width: 100%;
+  }
+
+  .greenBox img {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
 
   h1 {
@@ -253,4 +232,33 @@ article .collection {
   li {
     font-size: 0.8em;
   }
+}
+
+.greenBox {
+  height: 20vw;
+  padding: 0vw 30vw;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: 1em;
+}
+
+li {
+  font-size: 0.8em;
 }

@@ -297,29 +297,35 @@ p {
 
 /*footer styling below*/
 
-/* footer {  display: block;
-} */
+.emailBanner {background-color: var(--color-3);padding-bottom: 2em;}
+
+.h1Email {text-align: center; padding-top: 1em;
+padding-bottom: 0.5em;}
+
+.emailBanner h3 {text-align: center; text-transform: lowercase;}
+
 .wrapperFooter { display: grid;
   width: 100%;
   grid-template-columns: 4fr 2fr;
   padding: 2em;
- 
+  background-color: var(--color-5);
 }
+
+.emailInput {
+  border-bottom: 1px black solid;
+ padding: 1em;
+}
+
 .ul1  {display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 0.5em;
   padding: 1em;
-  
 }
 
 .ul1 li {
   display: inline-flex;
-
   }
-}
-.
-.ul1Wrapper {display:block;}
 
 .ul2 {display: flex;
   flex-wrap: wrap;
@@ -336,8 +342,6 @@ p {
   justify-content: space-around;
 }
 
-.ul3 {}
-
 .ul3 img {max-height: 1.5em;}
 
-.signature {font-size:0.8em; text-align: center;text-transform: lowercase; background-color: var(--color-5);padding: 1em;}
+.signature {font-size:0.8em; text-align: center;text-transform: lowercase;padding: 1em;background-color: var(--color-5)}

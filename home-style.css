@@ -119,6 +119,9 @@ article img {
   grid-template-columns: 4fr 1fr;
   text-align: left;
 }
+.container img {} 
+
+.container {background-color:bisque; max-height: 100%;height:calc((25vw - 2em)*1.3);}
 article h2 {
   font-size: 1.2rem;
   margin-top: 0;

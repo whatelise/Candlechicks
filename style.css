@@ -5,8 +5,9 @@
 }
 html {
   height: 100%;
-width: 100vw;
-overflow-x: hidden;}
+  width: 100vw;
+  overflow-x: hidden;
+}
 
 img {
   max-width: 100%;
@@ -112,19 +113,24 @@ nav ul {
   height: auto;
 }
 
-.bag {max-width: 1.2em;
+.bag {
+  max-width: 1.2em;
   min-width: 1em;
 }
-.search {max-width: 1.2em;
+.search {
+  max-width: 1.2em;
   min-width: 1em;
 }
 
-.logo {text-align: center;
+.logo {
+  text-align: center;
   height: 3em;
   margin-bottom: -0.2em;
 }
 
-.logo img {height: 100%;}
+.logo img {
+  height: 100%;
+}
 a .link {
   text-align: center;
 }
@@ -232,7 +238,7 @@ button {
   margin: 1em 1em 1em 0em;
 }
 .button2 {
-  border:none;
+  border: none;
   padding: 1em 1.2em;
   border-radius: 1.5em;
   text-align: center;
@@ -277,7 +283,7 @@ h2 {
   font-weight: 300;
   font-size: 1.6em;
   line-height: 1.6em;
-  text-align:center;
+  text-align: center;
 }
 
 h3 {
@@ -297,12 +303,11 @@ h4 {
   font-weight: bold;
 }
 
-h5{
-  font-size: .8em;
-  padding-left: .8em;
+h5 {
+  font-size: 0.8em;
+  padding-left: 0.8em;
   line-height: 1.5em;
 }
-
 
 p {
   font-family: var(--primary-font);
@@ -313,30 +318,38 @@ p {
 
 /*footer styling below*/
 
-.wrapEmailInput {display: grid;
+.wrapEmailInput {
+  display: grid;
   grid-template-columns: repeat(1fr);
-  grid-template-areas:
-  ". ym .";
+  grid-template-areas: ". ym .";
 }
 
-.emailInput {grid-template-areas:ym;
-  border-bottom: 1px black solid; }
+.emailInput {
+  grid-template-areas: ym;
+  border-bottom: 1px black solid;
+}
 
 .emailBanner {
   background-color: var(--color-3);
   padding-bottom: 2em;
   margin-bottom: 2em;
-margin-top:2em}
+  margin-top: 2em;
+}
 
-.h1Email {text-align: center;
+.h1Email {
+  text-align: center;
   padding-top: 2em;
-  padding-bottom: 0.5em;}
+  padding-bottom: 0.5em;
+}
 
-.h3Email {text-align: center;
-  text-transform: lowercase;padding-bottom: 3em;
-;}
+.h3Email {
+  text-align: center;
+  text-transform: none;
+  padding-bottom: 3em;
+}
 
-.wrapperFooter { display: grid;
+.wrapperFooter {
+  display: grid;
   width: 100%;
   grid-template-columns: 4fr 2fr;
   padding: 2em;
@@ -344,43 +357,62 @@ margin-top:2em}
   padding-top: 3em;
 }
 
-.wrapEmailInput {/* text-align: center; */
-   display: grid;
+.wrapEmailInput {
+  /* text-align: center; */
+  display: grid;
   grid-template-columns: 1fr 70vw 1fr;
-  grid-template-areas:
-  ". ei .";
-}  
+  grid-template-areas: ". ei .";
+}
 
-.emailInput {grid-area:ei;
+.emailInput {
+  grid-area: ei;
   display: inline-flex;
   flex-wrap: wrap;
-justify-content: space-between;
-margin-bottom: 0.5em;}
-.ul1  {display: grid;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.ul1 {
+  display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 0.5em;
 }
 
 .ul1 li {
-  display: inline-flex; padding-bottom: 2em;
-  }
+  display: inline-flex;
+  padding-bottom: 2em;
+}
 
-.ul2 {display: flex;
+.ul2 {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.ul3 {display: flex;
+.ul3 {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.ul3 img {max-height: 1.5em;}
+.ul3 img {
+  max-height: 1.5em;
+}
 
-.signature {font-size:0.8em; text-align: center;text-transform: lowercase;padding: 1em;background-color: var(--color-5)};
+.signature {
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: none;
+  padding: 1em;
+  background-color: var(--color-5);
+}
 
-@media only screen and (max-width: 700px) { 
-  h2, h3, h4, h5, p {
-  font-size: 1em;}
+@media only screen and (max-width: 700px) {
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    font-size: 1em;
+  }
 }

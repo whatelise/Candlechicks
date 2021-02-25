@@ -44,7 +44,9 @@ main {
 section h4 {
   margin-bottom: 1em;
 }
-
+h4 {
+  text-align: left;
+}
 .details {
   line-height: 1.2em;
   margin-bottom: 1em;

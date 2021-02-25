@@ -56,7 +56,7 @@ main {
   /* padding: 0vw 1vw; */
 /* height: 100vh; */
 /* } */
-*/ */ .moodBanner1 {
+.moodBanner1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -107,7 +107,6 @@ article img {
 }
 .product a {
   text-decoration: none;
-
   text-underline-position: none;
 }
 .product {

@@ -28,11 +28,13 @@ fetch(url, options)
 function showProduct(product) {
   console.log(product);
   document.querySelector(".productname").textContent = product.Name;
-  document.querySelector(".price").textContent = product.Price;
+  document.querySelector(".price").textContent = product.Price + " KR";
   const imgurl = mediaurl + product.Image[0];
   document.querySelector(".productimage").src = imgurl;
   console.log(imgurl);
-  document.querySelector("p.collection").textContent = product.Collection;
+  document.querySelector("p.collection").textContent =
+    product.Collection + " Collection";
   document.querySelector(".details").innerHTML = product.Description;
-  document.querySelector(".measurement span").textContent = product.Measurement;
+  document.querySelector(".measurement span").textContent =
+    " " + product.Dimension;
 }

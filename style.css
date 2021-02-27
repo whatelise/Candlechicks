@@ -280,8 +280,8 @@ h2 {
   /* padding: 4em 4em 2em 4em; */
   font-family: var(--secondary-font);
   font-weight: 300;
-  font-size: 1.6em;
-  line-height: 1.6em;
+  font-size: 3em;
+  line-height: 1em;
   text-align: center;
 }
 
@@ -295,9 +295,8 @@ h3 {
 
 h4 {
   font-family: var(--primary-font);
-  text-transform: uppercase;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.8em;
   line-height: 1.5em;
   font-weight: bold;
 }
@@ -316,6 +315,7 @@ p {
 }
 
 /*footer styling below*/
+footer{margin: 0 0 0 0;}
 
 .wrapEmailInput {
   display: grid;
@@ -374,7 +374,9 @@ p {
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 0.5em;
+  grid-column-gap: 2vw;
+  padding-left: 2vw;
+  padding-right:2vw;
 }
 
 .ul1 li {

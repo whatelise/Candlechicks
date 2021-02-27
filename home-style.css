@@ -28,7 +28,9 @@ main {
   bottom: 0;
 }
 
-.bannerImg {bottom:10vw}
+.bannerImg {
+  bottom: 10vw;
+}
 
 .greenBox {
   top: 0;
@@ -36,11 +38,12 @@ main {
   z-index: 4;
   height: 100%;
   width: 100%;
-   }
+}
 
-.greenBox img { position: absolute;
-height: 26.5vw;
-width: auto;
+.greenBox img {
+  position: absolute;
+  height: 26.5vw;
+  width: auto;
 }
 
 .moodBanner1 {
@@ -48,40 +51,59 @@ width: auto;
   grid-template-columns: 1fr 1fr;
   background-color: var(--color-5);
   z-index: 3;
-overflow-y: hidden;}
+  overflow-y: hidden;
+}
 
 .moodBanner2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--color-2);
   z-index: 3;
-overflow-y: hidden;
-margin-top: 4em;
-margin-bottom: 4em;}
-
-.beigeBox {z-index: 3; padding: 8vw 5vw 6vw 5vw;}
-
-.bannerImg1 {position:relative; height:40vw;}
-
-.bannerImg1 img {position: absolute; top: -8vw}
-.beigeBox h2 {
-padding-bottom: 2vw;}
-
-h4 {text-transform: lowercase;
-  font-weight: lighter;    
-  padding: 8vw 15vw 10vw 15vw;
+  overflow-y: hidden;
+  margin-top: 4em;
 }
 
-.beigeBox a {margin-bottom: -2vw;}
+.beigeBox {
+  z-index: 3;
+  padding: 8vw 5vw 6vw 5vw;
+}
 
+.bannerImg1 {
+  position: relative;
+  height: 40vw;
+}
+
+.bannerImg1 img {
+  position: absolute;
+  top: -8vw;
+}
+.beigeBox h3 {
+  text-align: center;
+  margin-top: -2em;
+  padding-bottom: 2em;
+}
+.beigeBox h2 {
+  padding-bottom: 5vw;
+}
+
+h4 {
+  font-weight: 100;
+  padding: 5vw 15vw 5vw 15vw;
+}
+
+.beigeBox a {
+  margin-bottom: -2vw;
+}
 
 /*styling top sellers*/
 
 /* product */
 
-.h1TopSellers {text-align: center;
+.h1TopSellers {
+  text-align: center;
   padding-top: 2em;
-  padding-bottom:1em;}
+  padding-bottom: 1em;
+}
 
 article img {
   max-width: 100%;
@@ -99,9 +121,12 @@ article img {
   width: 100%;
 }
 
-.container {background-color:var(--color-5);
-  max-height: 100%;height: calc((100vw - 1.5em)/4*(1.2));
-  overflow:hidden;}
+.container {
+  background-color: var(--color-5);
+  max-height: 100%;
+  height: calc((90vw) / 4 * (1.2));
+  overflow: hidden;
+}
 
 article h2 {
   font-size: 1.2rem;
@@ -124,68 +149,89 @@ article .collection {
 }
 
 #topSeller {
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 0.5em;
+  grid-column-gap: 2vw;
 }
 
-  @media only screen and (max-width: 700px) {
-    .banner {
-      display: flex;
-      flex-wrap: wrap;
-      overflow: hidden;
-    }
-      
-    .mobileHide {display: none;}
+button {
+}
 
-      .bannerImg { transform: scale(1);
-        bottom: 0;
-      background-image: url(img/home-whack6.jpg);
-      background-attachment:scroll;
-        background-position: center center;
-        z-index: 2;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        margin-top: -16em;
-      }
-    .bannerImg1 {position:relative; height:auto;width: 100vw;}
-      
-      .bannerImg1 img {position:relative; scale: (2); } 
-      
-      .beigeBox {width:100vw;}
-    .greenBox {
-      top: 0;
-      background-color: var(--color-3);
-      z-index: 4;
-      height: 35%;
-      width: 100%;
-       }
+@media only screen and (max-width: 700px) {
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 
-    .greenBox img { position:static; display: inline-flex;
-      align-items: center;
+  .mobileHide {
+    display: none;
+  }
+
+  .bannerImg {
+    transform: scale(1);
+    bottom: 0;
+    background-image: url(img/home-whack6.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
-  width: 100%;}
+    width: 100%;
+    margin-top: -16em;
+  }
+  .bannerImg1 {
+    position: relative;
+    height: auto;
+    width: 100vw;
+  }
 
-  
-    .moodBanner1 {
-     display: flex;
+  .bannerImg1 img {
+    position: relative;
+    scale: (2);
+  }
+
+  .beigeBox {
+    width: 100vw;
+    height: 34vw;
+  }
+  .greenBox {
+    top: 0;
+    background-color: var(--color-3);
+    z-index: 4;
+    height: 35%;
+    width: 100%;
+  }
+
+  .greenBox img {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .moodBanner1 {
+    display: flex;
     flex-wrap: wrap;
-    }
+  }
 
-
-      .moodBanner2 {
-     display: flex;
+  .moodBanner2 {
+    display: flex;
     flex-wrap: wrap;
-    }
+  }
 
-    .moodBanner1 a {font-size: 0.8em;}
+  .moodBanner1 a {
+    font-size: 0.8em;
+  }
 
-  .moodBanner2 a {font-size: 0.8em;}
-   
-    
+  .moodBanner2 a {
+    font-size: 0.8em;
+  }
 
   h1 {
     font-family: var(--primary-font);
@@ -199,9 +245,6 @@ article .collection {
     flex-wrap: wrap;
   }
 
-
-  
-  
   h2,
   h3,
   h4,
@@ -214,18 +257,22 @@ article .collection {
     font-size: 0.8em;
   }
 
-  .container {background-color:var(--color-5);
-    max-height: 100%;height: calc((100vw - 2.5em)/1*(0.6));
-    overflow:hidden;}
-  
+  .container {
+    background-color: var(--color-5);
+    max-height: 100%;
+    height: calc((100vw - 2.5em) / 1 * (0.6));
+    overflow: hidden;
+  }
 
-  #topSeller {margin-left: 1em;
+  #topSeller {
+    margin-left: 1em;
     margin-right: 1em;
     display: grid;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 0.5em;
   }
-  .collection {margin-bottom: 1.5em;}
-  
+  .collection {
+    margin-bottom: 1.5em;
+  }
 }

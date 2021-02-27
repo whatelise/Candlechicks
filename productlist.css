@@ -21,6 +21,7 @@ nav {
 #wrapper h2 {
   font-size: 2.2em;
   padding-bottom: 1em;
+  padding-top: 4em;
 }
 
 #filtersandproductlist {
@@ -64,17 +65,14 @@ article img {
 }
 .info {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 6fr 1fr;
   text-align: left;
-}
-
-article .collection {
-  margin-top: 5px;
+  margin-top: 3px;
+  margin-left: 3px;
 }
 
 .h3style {
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin-top: 3px;
 }
 #filters ul {
   list-style: none;
@@ -100,7 +98,7 @@ h4 {
   }
 
   #wrapper h2 {
-    padding: 2em 2em 0 2em;
+    padding: 4em 2em 0.5em 2em;
     font-size: 1.6em;
   }
   #wrapper p {

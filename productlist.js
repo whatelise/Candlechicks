@@ -44,8 +44,9 @@ function handleData(product) {
     const aEl = copy.querySelector("a");
     aEl.href = "productview.html?id=" + candle._id;
     copy.querySelector("h3").textContent = candle.Name;
-    copy.querySelector(".collection").textContent = candle.Collection;
-    copy.querySelector(".price").textContent = candle.Price;
+    copy.querySelector(".collection").textContent =
+      candle.Collection + " Collection";
+    copy.querySelector(".price").textContent = candle.Price + " KR";
     const imgurl = mediaurl + candle.Image[0];
 
     console.log(imgurl);

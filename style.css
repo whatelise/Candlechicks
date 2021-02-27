@@ -235,6 +235,7 @@ button {
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 1em 1em 1em 0em;
+  background-color: white;
 }
 .button2 {
   border: none;

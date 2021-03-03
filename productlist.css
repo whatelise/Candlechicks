@@ -26,7 +26,7 @@ nav {
 
 #filtersandproductlist {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 4fr;
   margin: 2em 3em;
 }
 #filters {
@@ -47,7 +47,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1em;
-  margin-left: 0;
+  margin: 0 4em;
 }
 a {
   text-align: left;
@@ -65,7 +65,7 @@ article img {
 }
 .info {
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 3fr 1fr;
   text-align: left;
   margin-top: 3px;
   margin-left: 3px;

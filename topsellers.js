@@ -34,7 +34,7 @@ function handleData(product) {
     const copy = template.cloneNode(true);
     copy.querySelector("h3").textContent = candle.Name;
     copy.querySelector(".collection").textContent = candle.Collection;
-    copy.querySelector(".price").textContent = candle.Price;
+    copy.querySelector(".price").textContent = candle.Price + " KR";
     const imgurl = mediaurl + candle.Image[0];
     console.log(imgurl);
     copy.querySelector("img").src = imgurl;
